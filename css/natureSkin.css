@@ -1,0 +1,148 @@
+body {
+    background-color: #999; /* 그라데이션으로 바꾸기 */
+}
+
+.wrap {
+    background-color: #fff;
+}
+header {
+    background: url(../images/main_img02.png) no-repeat center center;
+    padding: 20px 40px;
+    height: 900px;
+    background-size: cover;
+}
+
+h1.title {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #fff;
+    height: 320px;
+    justify-content: space-between;
+    padding: 200px 0;
+}
+
+nav a {
+    background-color: rgba(220, 20, 60, 0.7);
+    padding: 20px;
+    border-radius: 5px 10px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.fas {
+    margin-right: 10px;
+    display: none;
+}
+
+nav a:hover .fas {
+    display: block;
+}
+
+main > section > div {
+    margin: 10px 20px;
+}
+
+main > section > div > p {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+h2.title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main > section > div > p {
+    line-height: 1.7;
+}
+
+aside {
+    margin: 30px;
+    margin-top: 50px;
+}
+aside img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .wrap {
+        width: 768px;
+        margin: auto;
+    }
+    header {
+        height: 255px;
+        padding: 0;
+        background-position: top center;
+        background-size: cover;
+    }
+    nav {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    nav a {
+        width: 100%;
+        border-radius: 0;
+    }
+    h1.title {
+        padding: 120px 40px 50px;
+    }
+    aside {
+        display: flex;
+    }
+    aside img {
+        width: calc(100% - 10px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrap {
+        width: 1024px;
+    }
+    header {
+        height: 430px;
+    }
+    h1.title {
+        padding: 200px 40px 145px;
+    }
+    main {
+        display: flex;
+    }
+    section {
+        width: 70%;
+    }
+    aside {
+        flex-direction: column;
+        width: 30%;
+        margin: 20px;
+    }
+}
