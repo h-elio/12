@@ -1,15 +1,14 @@
 body {
-    background-color: #999; /* 그라데이션으로 바꾸기 */
+    background: linear-gradient(#ffe4cf, #968272);
 }
 
 .wrap {
     background-color: #fff;
 }
 header {
-    background: url(../images/main_img02.png) no-repeat center center;
+    background: url(../images/main_img02.png) no-repeat center top / cover;
     padding: 20px 40px;
     height: 900px;
-    background-size: cover;
 }
 
 h1.title {
@@ -28,6 +27,7 @@ nav {
     height: 320px;
     justify-content: space-between;
     padding: 200px 0;
+    align-items: center;
 }
 
 nav a {
@@ -35,17 +35,24 @@ nav a {
     padding: 20px;
     border-radius: 5px 10px;
     display: flex;
-    width: 80%;
+    width: 70%;
     justify-content: center;
+    transition: all 0.4s;
 }
 
 .fas {
-    margin-right: 10px;
-    display: none;
+    opacity: 0;
+    transition: all 0.4s;
+    font-size: 18px;
 }
 
 nav a:hover .fas {
-    display: block;
+    opacity: 1;
+    margin-right: 8px;
+}
+
+nav a:focus {
+    background-color: #5f0008;
 }
 
 main > section > div {
@@ -80,8 +87,13 @@ aside {
     margin-top: 50px;
 }
 aside img {
-    width: 100%;
     margin: 10px 0;
+    width: 100%;
+    filter: saturate(30%) brightness(50%);
+    transition: all 0.5s;
+}
+aside a:hover img {
+    filter: none;
 }
 
 footer {
@@ -92,16 +104,17 @@ footer {
     color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
     .wrap {
-        width: 768px;
         margin: auto;
+        margin: 0 20px 100px;
     }
     header {
         height: 255px;
         padding: 0;
-        background-position: top center;
-        background-size: cover;
+    }
+    h1.title {
+        margin-bottom: 0;
     }
     nav {
         flex-direction: row;
@@ -125,9 +138,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    .wrap {
-        width: 1024px;
-    }
     header {
         height: 430px;
     }
