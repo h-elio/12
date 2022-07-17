@@ -1,5 +1,6 @@
 # 
 ## ex3.html
+[nature skin](https://h-elio.github.io/12/ex3.html)
 ![ex3.html](https://user-images.githubusercontent.com/95092921/178399295-86afe878-d79d-41b5-8e2d-daa5f834b1f2.png)
 ```
 반응형 사이트 만들기
